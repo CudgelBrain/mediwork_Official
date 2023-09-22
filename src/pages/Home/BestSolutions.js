@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Section2 = () => {
   const arr = [
@@ -61,9 +63,9 @@ const Section2 = () => {
           Explore Our Offering
         </h4>
       </div>
-      <div className=" mt-16">
+      <div className=" mt-16 ">
         <div>
-          <ul className="border-yellow w-[30%] bg-yellow shadow-xl">
+          <ul className="border-yellow w-[30%] bg-yellow shadow-xl relative z-20">
             {arr.map((data) => (
               <div className="transition hover:w-[25rem] hover:bg-blue hover:shadow-xl flex justify-start items-center border-b-[0.5px] hover:border-b-blue">
                 <div className=" ml-8">
@@ -80,8 +82,60 @@ const Section2 = () => {
           </ul>
         </div>
 
-        <div className="border bg-white">
-          <h2 className="text-2xl font-bold border-b-2 border-yellow">Outpatient management System</h2>
+        <div className="border bg-white absolute z-10 top-[58rem] right-40 left-52 whiteCardPadding">
+          <div className="text-3xl font-semibold m-auto">
+            <h2 className="border-b-[3px] border-yellow py-3 w-[28rem]">
+              Outpatient management System
+            </h2>
+          </div>
+          <div className="flex">
+            <p className="mt-5">
+              This module is in facr an entry point for scheduled appointments
+              with the doctor for any kind of diagnosis or consultations
+              required. This module allows doctors to provide better patient
+              care and quick diagnosis and treatment decisions by giving easy
+              access to patient information .patient visites are classfified as
+              new or revisit. New requests and requests laboratory tests,
+              x-rays, and other examinations this module can also be used to
+              manage.
+            </p>
+            <img
+              src="/home/doc.png"
+              alt="Doctor Image"
+              height={262}
+              width={262}
+              className="p-4"
+            />
+          </div>
+          <h2 className="text-2xl font-bold mt-10">This Module Manages</h2>
+          <div className="flex mt-5 text-lg decoration-red decoration-1 underline">
+            <ul className="list-disc text-red ml-5">
+              <li>Visit Details</li>
+              <li>Diagnosis Detail</li>
+              <li>Patient Appointments</li>
+              <li>Clinical Service Detail</li>
+              <li>Test and Investigation Reporting</li>
+            </ul>
+            <ul className="list-disc text-red ml-10">
+              <li>Outpatient Medical Observation</li>
+              <li>Appointment Scheduling</li>
+              <li>Diagnosis and Treatment History</li>
+              <li>Medicines Detail</li>
+              <li>
+                Medicines Advised and Can Be Supplied to Patients by Pharmacy.
+              </li>
+              <li>Vaccine Charts</li>
+            </ul>
+          </div>
+          <div className="text-right mt-5">
+            <button className="text-lg text-yellow">
+              Explore More{" "}
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="align-middle ml-2"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>

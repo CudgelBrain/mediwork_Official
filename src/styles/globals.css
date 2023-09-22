@@ -27,3 +27,27 @@ body {
 .navbarShadow {
   box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.4);
 }
+
+.whiteCardPadding{
+  padding: 2rem 10rem 5rem 22rem;
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider.full-bleed .slidewrapper {	
+  margin-right: var(--slider-fullbleed-gap);
+}
+
+.slider.full-bleed .slidewrapper:first-child {
+  margin-left: 0;
+  padding-left: calc(50vw - (var(--slider-size) / 2));
+}
+
+.slider.full-bleed .slidewrapper:last-child {
+  margin-right: 0;
+  padding-right: calc(50vw - (var(--slider-size) / 2));
+}
