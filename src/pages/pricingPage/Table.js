@@ -51,20 +51,20 @@ const DynamicTable = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto rounded-l-lg">
+    <div className="max-w-7xl mx-auto rounded-l-[2rem] bg-white">
       <table className="w-full">
         <thead>
-          <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-            <th>Column 4</th>
+          <tr className="text-white">
+            <th className="text-3xl bg-yellow w-[40%] pt-5 pb-5">Our Plans</th>
+            <th className="text-lg bg-vvl_blue w-[20%]">Starter package (S10)</th>
+            <th className="text-lg bg-vl_blue w-[20%]">Standard package (S20)</th>
+            <th className="text-lg bg-l_blue w-[20%]">Premium package (S30)</th>
           </tr>
         </thead>
         <tbody>
           {data.map((row, index) => (
             <React.Fragment key={index}>
-              <tr>
+              <tr className="text-lg font-semibold">
                 <td>{row.name}</td>
                 <td>{row.name}</td>
                 <td>{row.name}</td>

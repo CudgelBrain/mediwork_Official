@@ -1,15 +1,15 @@
 import { useRouter } from "next/router";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3CenterLeftIcon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "About Us", href: "/about/about", current: true },
-  { name: "Services", href: "/services/services", current: false },
+  { name: "About Us", href: "/AboutUs/About", current: true },
+  { name: "Services", href: "/Services/Services", current: false },
   { name: "Pricing", href: "/pricingPage/Pricing", current: false },
-  { name: "Contact", href: "/contact", current: false },
+  { name: "Contact", href: "/ContactUs/ContactUs", current: false },
   { name: "Contact", href: "/contact/contact", current: false },
 ];
 
@@ -44,15 +44,16 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center lg:hidden order-2">
                 {/* Mobile menu button*/}
                 <Disclosure.Button
-                  className="relative inline-flex items-center justify-end 
-                rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  className="relative inline-flex items-center justify-end p-2 mr-3 text-white border border-yellow rounded-full bg-yellow hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 >
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3CenterLeftIcon
+                    className="block h-6 w-6" aria-hidden="true" />
+                    
                   )}
                 </Disclosure.Button>
               </div>

@@ -11,6 +11,26 @@ import OurCustomersSay from "./OurCustomersSay";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
+  const arr = [
+    {
+      img: "./home/icons/profile.png",
+      alt:"Icon",
+      title:"Choose Solution",
+      desc: "Choose a medical specialist that best matches your specific health concerns and symptoms",
+    },
+    {
+      img: "./home/icons/calendar.png",
+      alt:"Icon",
+      title: "Make a Schedule",
+      desc: "Make a schedule with the doctor concerned so you can start the examination",
+    },
+    {
+      img: "./home/icons/star.png",
+      alt:"Icon",
+      title: "Get your Solutions",
+      desc: "After conducting an examination with a specialist we can help find the right healing method",
+    },
+  ];
   return (
     <div className="max-w-7xl mx-auto">
       <div className="bg-custom-image">
@@ -20,10 +40,21 @@ const HomePage = () => {
     <BestSolutions/>
     <OurRating/>
     <OurAchievements/>
-    <FastSolutions/>
+    <div>
+        <h3 className="text-yellow text-center mt-3">Fast Solutions</h3>
+        <h4 className="text-3xl font-bold text-white text-center mt-2">
+          <span className="text-yellow">Step By Step</span> to get your
+          solutions
+        </h4>
+      </div>
+    <div className="flex items-center justify-center mt-5">
+    {arr.map((props,index) => (
+    <FastSolutions key={index} props={...props}/>
+    ))}
+    </div>
     <OurCustomersSay/>
     <Contact/>
-    <Footer/>
+    <Footer showMap={false}/>
     <MarginBt/>
     </div>
   );

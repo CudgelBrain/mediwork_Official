@@ -23,8 +23,10 @@ const Pricing = () => {
         />
       </div>
       <div className="mt-16">
-        <DynamicTable/>
-      <Footer/>
+        <DynamicTable />
+        <div className="mt-20">
+          <Footer />
+        </div>
       </div>
     </div>
   );

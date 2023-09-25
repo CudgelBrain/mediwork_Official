@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
-const Contact = () => {
+const Contact = ({ showMap }) => {
   const [selectedOption, setSelectedOption] = useState("sayHi");
 
   const handleOptionChange = (event) => {
@@ -12,6 +13,16 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  const containerStyle = {
+    width: "100%",
+    height: "400px",
+  };
+
+  const center = {
+    lat: 37.7749, // Replace with your desired latitude
+    lng: -122.4194, // Replace with your desired longitude
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,8 +40,8 @@ const Contact = () => {
 
   return (
     <div className="">
-      <div className="border border-blue bg-blue p-16 flex ">
-        <div className="w-[60%]">
+      <div className="border border-blue bg-blue p-16 sm:flex ">
+        <div className="sm:w-[60%]">
           <h1 className="text-yellow text-3xl leading-normal font-bold">
             Left questions? Get free consultation and free trial!
           </h1>
@@ -39,25 +50,43 @@ const Contact = () => {
             corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
           </p>
           <div className="flex sm:flex-row flex-col sm:mr-10 sm:mt-5">
-            <div className="sm:block flex items-center flex-col">
-              <p className="text-white mt-4">Email address</p>
+            <div className="sm:block flex sm:items-center flex-col">
+              <p className="text-white mt-5">Email address</p>
               <p className="text-white font-semibold mt-1">
                 info.mediworksservices@gmail.com
               </p>
-              <p className="text-white mt-4">Phone number</p>
+              <p className="text-white mt-5">Phone number</p>
               <p className="text-white font-semibold mt-1">+91-86-3030-3358</p>
-              <p className="text-white mt-4 sm:w-1/2 w-2/6 text-center sm:text-left">
-                Address
-              </p>
-              <p className="text-white font-semibold mt-1">
+              <p className="text-white mt-5 sm:w-1/2">Address</p>
+              <p className="text-white font-semibold mt-1 mb-10">
                 Building No:- 58, Street No: 08, Om Sai Enclave, Greater Noida
                 West, Gg Nagar U.P.- 201301
               </p>
             </div>
           </div>
+          {showMap && (
+            <div>
+              <img
+                src="/contact/map.png"
+                alt="Map here"
+                className="w-[570px] h-[249px]"
+              />
+              {/* <div className=""> */}
+              {/* <LoadScript googleMapsApiKey="YOUR_API_KEY_HERE">
+                    <GoogleMap
+                      mapContainerStyle={containerStyle}
+                      center={center}
+                      zoom={10}
+                    >
+                      // Add map components here //
+                    </GoogleMap>
+                  </LoadScript> */}
+            </div>
+            // </div>
+          )}
         </div>
 
-        <div className="ml-16 border rounded-3xl bg-yellow w-[50%]">
+        <div className="sm:ml-16 border rounded-3xl bg-yellow sm:w-[50%]">
           <div className="rounded-3xl p-12">
             <div className="">
               <h2 className="text-3xl text-white font-semibold">Contact Us</h2>
