@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Headlines from "../components/Headlines";
 import Contact from "../components/Contact";
+import SpecialFooter from "./SpecialFooter";
+import HelpdeskReception from "./HelpdeskReception";
+import HelpdeskReception2 from "./HelpdeskReception2";
 
 const Services = () => {
   const startHead = "Hospital Healthcare Platform";
@@ -12,17 +15,22 @@ const Services = () => {
   const width = "1000";
 
   return (
-    <div className="max-w-7xl mx-auto   ">
+    <div className="">
       <Navbar />
-      <Headlines
-        startHead={startHead}
-        content={content}
-        showButton={true}
-        headImg={headImg}
-        height={height}
-        width={width}
-      />
+      <div className="max-w-7xl mx-auto">
+        <Headlines
+          startHead={startHead}
+          content={content}
+          showButton={true}
+          headImg={headImg}
+          height={height}
+          width={width}
+        />
+      </div>
+      <HelpdeskReception />
+      <HelpdeskReception2/>
       <Contact />
+      <SpecialFooter />
     </div>
   );
 };

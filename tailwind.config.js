@@ -18,6 +18,7 @@ module.exports = {
         vl_blue: "#01698F",
         vvl_blue: "#3DC0EB",
         l_blue: "#034D66",
+        navy_blue: "#00254D",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -8,9 +8,9 @@ const Headlines = ({startHead,spanHead,endHead,content,showButton,headImg,width,
   const buttonPlaceholderVoucher = "Download Voucher";
   return (
     <div className="mt-16">
-      <div className="flex mx-10">
+      <div className="sm:flex mx-10">
         {/*WRAPPER*/}
-        <div style={{ width: "690px" }}>
+        <div className="w-[500px] sm:w-[690px]">
           {/*HEADINGS*/}
           <h1 className="text-white text-6xl font-semibold mt-10">
             {startHead} <span className="text-yellow">{spanHead}</span>{endHead}          </h1>

@@ -36,9 +36,12 @@ const OurRating = () => {
           </div>
         ))}
       </div>
-      <div className="Images mt-16 flex">
+      <div className="Images mt-20 flex justify-between overflow-x-hidden items-baseline">
         <img src="/home/left.png" alt=""  width={500} height={600} className="mx-auto"/>
-        <img src="/home/main.png" alt=""  width={500} height={200} className=""/>
+        <div>
+          <img src="/home/main.png" alt=""  width={500} height={200} className=""/>
+          <img src="/home/shadow.png" alt="shadow"  width={500} height={200} className=""/>
+        </div>
         <img src="/home/right.png" alt=""  width={500} height={600} className="mx-auto"/>
       </div>
     </div>

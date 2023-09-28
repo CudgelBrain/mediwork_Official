@@ -6,20 +6,27 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-const   Footer = () => {
+const SpecialFooter = () => {
   return (
-    <div className="bg-white p-20 sm:flex border-t-4 border-yellow">
-      <div className="sm:w-[42%] sm:ml-20">
-        <img src="/blueLogo.png" alt="Logo" className="sm:w-[143px] sm:h-[51px]" />
-        <p>
+    <div className="bg-yellow p-10 sm:flex border-t-4 border-yellow text-white">
+      <div>
+        <img src="/services/specialFooterLogoIcon.png" alt="specialFooterLogoIcon" className="h-[163.7px] w-[163.7px]"/>
+      </div>
+      <div className="sm:w-[38%] ml-5">
+        <img
+          src="/services/specialFooterLogo.png"
+          alt="Logo"
+          className="sm:w-[175px] sm:h-[47px]"
+        />
+        <p className="ml-2 mt-2">
           This free App provides a solution to your health needs by offering you
           a one-stop access to complete information about various medical
           checkups. This App carries simple tips and advice to help you maintain
           a healthy lifestyle.
         </p>
       </div>
-      <div className="flex mt-10 sm:mt-0">
-        <div className="sm:px-10 text-l_black sm:ml-40">
+      <div className="flex mt-10 sm:mt-0 text-white mx-10  mb-10">
+        <div className="sm:px-10 sm:ml-28">
           <h2 className="text-2xl sm:text-xl font-semibold">Company</h2>
           <ul className="leading-relaxed mt-2">
             <li>Home</li>
@@ -28,7 +35,7 @@ const   Footer = () => {
             <li>Pricing</li>
           </ul>
         </div>
-        <div className="pl-10 sm:pl-3 text-l_black">
+        <div className="pl-10 sm:pl-3">
           <h2 className="text-2xl sm:text-xl font-semibold">Explore</h2>
           <ul className="leading-relaxed mt-2">
             <li>Terms & Conds</li>
@@ -36,16 +43,18 @@ const   Footer = () => {
             <li>Cookies</li>
           </ul>
         </div>
-        <div className="px-10 text-l_black">
-          <h2 className="text-center text-2xl sm:text-xl font-semibold">Social Media</h2>
+        <div className="px-10">
+          <h2 className="text-center text-2xl sm:text-xl font-semibold">
+            Social Media
+          </h2>
           <div className="flex mt-2">
-            <div className="bg-white px-3 flex text-blue text-[30px] sm:text-[22px]">
+            <div className="px-3 flex text-[30px] sm:text-[22px]">
               <FontAwesomeIcon icon={faFacebook} />
             </div>
-            <div className="bg-white px-3 flex text-blue text-[30px] sm:text-[22px]">
+            <div className="px-3 flex text-[30px] sm:text-[22px]">
               <FontAwesomeIcon icon={faInstagram} />
             </div>
-            <div className="bg-white px-3 flex text-blue text-[30px] sm:text-[22px]">
+            <div className="px-3 flex text-[30px] sm:text-[22px]">
               <FontAwesomeIcon icon={faTwitter} />
             </div>
           </div>
@@ -55,5 +64,4 @@ const   Footer = () => {
   );
 };
 
-export default Footer;
-
+export default SpecialFooter;

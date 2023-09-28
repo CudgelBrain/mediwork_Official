@@ -39,7 +39,7 @@ const Contact = ({ showMap }) => {
   };
 
   return (
-    <div className="">
+    <div className="max-w-7xl mx-auto">
       <div className="border border-blue bg-blue p-16 sm:flex ">
         <div className="sm:w-[60%]">
           <h1 className="text-yellow text-3xl leading-normal font-bold">
