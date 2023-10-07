@@ -42,13 +42,13 @@ const About = () => {
         <div className='max-w-7xl mx-auto'>
           <Headlines startHead={startHead} spanHead={spanHead} endHead={endHead} content={content} showButton={false} headImg={headImg} height={height} width={width} />
           </div>
-        <div  className='mt-16'>
+        <div  className='md:mt-16  mt-8'>
           <h3 className="text-yellow text-center mt-3">Fast Solutions</h3>
           <h4 className="text-3xl font-bold text-white text-center mt-2">
             What we are upto?
           </h4>
         </div>
-      <div className="sm:flex items-center justify-center mt-5 max-w-7xl mx-auto">
+      <div className="flex lg:flex-row flex-col items-center justify-center mt-5 max-w-7xl mx-auto">
         {arr.map((props,index) => (
         <FastSolutions key={index} props={...props}/>
         ))}

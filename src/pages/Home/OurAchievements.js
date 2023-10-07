@@ -28,7 +28,7 @@ const OurAchievements = () => {
     },
   ];
   return (
-    <div className="mt-16">
+    <div className="mt-16 px-4">
       <div>
         <h3 className="text-yellow text-center mt-3">Our Achievements</h3>
         <h4 className="text-3xl font-bold text-white text-center">
@@ -37,9 +37,9 @@ const OurAchievements = () => {
       </div>
       <div className="flex mt-16">
         {certs.map((data) => (
-          <ul className="mx-14">
+          <ul className="lg:mx-14 mx-auto">
             <li>
-              <img src={data.img} alt={data.alt} width={100} height={112} />
+              <img src={data.img} alt={data.alt} width={100} height={112} className="w-[100px]" />
             </li>
           </ul>
         ))}

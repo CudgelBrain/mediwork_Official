@@ -58,7 +58,7 @@ const HomePage = () => {
             solutions
           </h4>
         </div>
-        <div className="flex items-center justify-center mt-5">
+        <div className="flex flex-col lg:flex-row items-center justify-center mt-5">
           {arr.map((props,index) => (
             <FastSolutions key={index} props={...props}/>
           ))}

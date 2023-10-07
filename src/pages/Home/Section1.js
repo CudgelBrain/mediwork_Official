@@ -20,7 +20,9 @@ const section1 = () => {
           showButton={showButton}
           buttonPlaceholder={buttonPlaceholder}
         />
+        <div className="my-16">
        <Icons/>
+       </div>
       </div>
     </div>
   );

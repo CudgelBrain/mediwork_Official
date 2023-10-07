@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import { useRouter } from "next/router";
 
 const Contact = ({ showMap }) => {
   const [selectedOption, setSelectedOption] = useState("sayHi");
 
+
+  const route = useRouter();
+  console.log(route)
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
@@ -39,13 +43,16 @@ const Contact = ({ showMap }) => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="border border-blue bg-blue p-16 sm:flex ">
-        <div className="sm:w-[60%]">
-          <h1 className="text-yellow text-3xl leading-normal font-bold">
+    <div className={`max-w-7xl mx-auto ${route ==="/ContactUs/ContactUs"? "mt-0": "mt-16"}`}>
+      <div className="border border-blue bg-blue lg:py-16 px-8 pb-16 sm:flex ">
+        <div className="lg:w-[60%] w-full">
+        {route.pathname === "/ContactUs/ContactUs" &&<h1 className="text-5xl lg:text-6xl font-semibold  mb-8 text-white">   
+          Let's Connect
+        </h1>}
+          <h1 className="text-yellow text-2xl md:text-3xl leading-normal font-bold">
             Left questions? Get free consultation and free trial!
           </h1>
-          <p className="text-l_grey mt-4">
+          <p className="text-l_grey mt-4 text-sm md:text-xl">
             Ut enim ad minima veniam, quis nostrum exercitationem ullam
             corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
           </p>
@@ -64,29 +71,11 @@ const Contact = ({ showMap }) => {
               </p>
             </div>
           </div>
-          {showMap && (
-            <div>
-              <img
-                src="/contact/map.png"
-                alt="Map here"
-                className="w-[570px] h-[249px]"
-              />
-              {/* <div className=""> */}
-              {/* <LoadScript googleMapsApiKey="YOUR_API_KEY_HERE">
-                    <GoogleMap
-                      mapContainerStyle={containerStyle}
-                      center={center}
-                      zoom={10}
-                    >
-                      // Add map components here //
-                    </GoogleMap>
-                  </LoadScript> */}
-            </div>
-            // </div>
-          )}
+       {showMap &&  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.378802593991!2d73.7515261761034!3d18.602024266679326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9803d0d67a5%3A0x23a5a39b89c5a08!2sMediworks%20Technologies%20LLP!5e0!3m2!1sen!2sin!4v1696703569193!5m2!1sen!2sin" width="570" height="250"  allowfullscreen=""
+        className="rounded-xl w-full md:mb-0 mb-12" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>}
         </div>
 
-        <div className="sm:ml-16 border rounded-3xl bg-yellow sm:w-[50%]">
+        <div className="lg:ml-16 border rounded-3xl bg-yellow lg:w-[50%]">
           <div className="rounded-3xl p-12">
             <div className="">
               <h2 className="text-3xl text-white font-semibold">Contact Us</h2>
@@ -157,8 +146,8 @@ const Contact = ({ showMap }) => {
                     className="appearance-none bg-transparent border-b-2 mr-3 leading-tight w-full px-3 py-2 focus:outline-none border-black"
                   />
                 </div>
-                <div className="">
-                  <button className="bg-blue text-white border-blue hover:bg-white border hover:border-blue hover:text-blue px-16 py-4 mt-8 rounded-md hidden sm:block">
+                <div className="w-full flex justify-end">
+                  <button className="bg-blue text-white border-blue hover:bg-white border hover:border-blue hover:text-blue px-12 py-3 md:px-16 md:py-4 mt-8 rounded-md">
                     Send
                   </button>
                 </div>

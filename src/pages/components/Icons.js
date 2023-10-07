@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 const Icons = () => {
   const logoIcons = [
@@ -40,11 +41,10 @@ const Icons = () => {
   ];
 
   return (
-    <div>
-      {" "}
-      <div className="flex mt-20 pb-20">
+      <div className="h-16 items-center">
+        <Marquee>
         {logoIcons.map((data) => (
-          <div className="border rounded-lg flex px-8 py-3 mx-auto items-center overflow-hidden">
+          <div className="border rounded-lg flex px-8 py-3 mx-auto items-center h-12 lg:mr-24 mr-4">
             <div className="mx-2">
               <img src={data.img} alt={data.alt} width={22} height={33} />
             </div>
@@ -53,8 +53,8 @@ const Icons = () => {
             </div>
           </div>
         ))}
+        </Marquee>
       </div>
-    </div>
   );
 };
 

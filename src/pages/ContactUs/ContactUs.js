@@ -10,7 +10,7 @@ const ContactUs = () => {
       <div className="mt-10">
         <Contact showMap={true} />
       </div>
-      <div className="mt-20">
+      <div className="md:mt-20 mt-8">
         <Footer/>
       </div>
     </div>

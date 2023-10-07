@@ -2,10 +2,10 @@ import React from "react";
 
 const HelpdeskReception = () => {
   return (
-    <div className="text-white bg-navy_blue">
-      <div className="flex">
-        <div className="p-10 w-1/2 mt-4 ml-10" >
-          <h2 className="text-4xl font-semibold">Helpdesk / Reception</h2>
+    <div className="text-white bg-navy_blue pb-4 md:pb-0">
+      <div className="flex flex-col md:flex-row">
+        <div className="md:p-10 md:w-1/2 py-8 px-6 mt-4 md:ml-10" >
+          <h2 className="md:text-4xl text-3xl font-semibold">Helpdesk / Reception</h2>
           <div className=" border-b-[3px] border-yellow py-2 w-16"/>
           <p className="mt-6 leading-loose">
             This module is in fact an entry point for schedules appointments
@@ -15,9 +15,9 @@ const HelpdeskReception = () => {
             informaton. Patient visits are classified as new or revisit.
           </p>
           <h3 className="text-xl font-semibold mt-10">This Module Manages</h3>
-          <div className="flex">
+          <div className="flex px-4 md:px-0">
             <div>
-              <ul className="list-disc ml-5 mt-5 leading-10 underline decoration-1">
+              <ul className="list-disc md:ml-5 mt-5 md:leading-10 leading-8 text-sm md:text-lg decoration-1">
                 <li>Visit Detail</li>
                 <li>Diagnosis Detail</li>
                 <li>Patient Appointments</li>
@@ -26,7 +26,7 @@ const HelpdeskReception = () => {
               </ul>
             </div>
             <div>
-              <ul className="list-disc ml-5 mt-5 leading-10 underline decoration-1">
+              <ul className="list-disc ml-5 mt-5 md:leading-10 leading-8 text-sm md:text-lg decoration-1">
                 <li>Outpatient Medical Observation</li>
                 <li>Appointment Scheduling</li>
                 <li>Diagnosis and Treatment History</li>
@@ -37,8 +37,8 @@ const HelpdeskReception = () => {
             </div>
           </div>
         </div>
-        <div className='w-full sm:w-1/2 mt-20'>
-            <img src="/about/device.png" alt="Devices" className='h-[635px] w-[1080px]'/>
+        <div className='w-full md:w-1/2 md:mt-20'>
+            <img src="/about/device.png" alt="Devices" className='md:h-[635px] w-[1080px]'/>
         </div>
       </div>
     </div>

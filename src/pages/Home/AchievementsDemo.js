@@ -6,23 +6,23 @@ const AchievementsDemo = () => {
   return (
     <div>
       {" "}
-      <div className="bg-white p-10 mt-16 flex">
-        <div className="w-1/2 justify-center items-center ml-20">
+      <div className="bg-white px-10 mt-16 flex flex-col lg:flex-row py-16 lg:py-10">
+        <div className="lg:w-1/2 justify-center items-center lg:ml-20 w-full relative">
           <img
             src="/home/video.png"
             alt="Video"
             width={574}
             height={343}
-            className="relative"
+            className="relative w-full lg:w-[574px] h-[250px] lg:h-[343px]"
           />
           <FontAwesomeIcon
             icon={faCirclePlay}
-            className="relative -top-44 left-[17.5rem] z-40 text-white"
+            className="relative -top-36 lg:-top-44 lg:left-[17.5rem] left-[50%] z-40 text-white"
             size="2x"
           />
-          <div className="border bg-yellow bg-opacity-25 p-10 h-[343px] w-[574px] rounded-[1.8rem] absolute top-[209.24rem]" />
+          <div className="border bg-yellow bg-opacity-25 lg:p-10  h-[250px] lg:h-[343px] w-full lg:w-[574px] rounded-[1.2rem] absolute z-60 lg:top-[210.60rem] top-0 lg:block" />
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <h1 className="text-yellow">Welcome To Healthcare</h1>
           <h2 className="text-black text-4xl font-semibold mt-2">
             Welcome to Healthcare
