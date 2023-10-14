@@ -25,7 +25,7 @@ body {
 }
 
 .navbarShadow {
-  box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 14px -1px rgb(255, 255, 255,0.2);
 }
 
 .whiteCardPadding{
