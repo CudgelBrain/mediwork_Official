@@ -1,8 +1,63 @@
 import React from "react";
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
+import Marquee from "react-fast-marquee";
+import { Carousel } from '@trendyol-js/react-carousel';
+
+// import { useSnapCarousel } from "react-snap-carousel";
 
 const OurRating = () => {
+
+
+  const styles = {
+    root: {},
+    scroll: {
+      position: "relative",
+      display: "flex",
+      overflow: "auto",
+      scrollSnapType: "x mandatory"
+    },
+    item: {
+      width: "500px",
+      height: "500px",
+      flexShrink: 0
+    },
+    itemSnapPoint: {
+      scrollSnapAlign: "start"
+    },
+    controls: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      marginTop: "1.5rem"
+    },
+    nextPrevButton: {
+      backgroundColor: 'white',
+      color: 'orange',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      boxShadow: 'black 0px 0px 20px',
+      borderRadius: '1.5rem',
+      alignSelf: 'center',
+      fontWieght: "bold",
+      fontSize: '1.2rem',
+      width: "2.5rem",
+      height: "2.5rem",
+      margin: "0px 12px"
+    },
+    nextPrevButtonDisabled: { opacity: 0.3 },
+    pagination: {
+      display: "flex"
+    },
+    paginationButton: {
+      margin: "10px"
+    },
+    paginationButtonActive: { opacity: 0.3 },
+    pageIndicator: {
+      display: "flex",
+      justifyContent: "center"
+    }
+  };
+
   const arr = [
     {
       numbers: "900+",
@@ -20,6 +75,36 @@ const OurRating = () => {
       desc: "Customers Approve",
     },
   ];
+
+
+
+
+  const arr2 = [
+    {
+      image: "/home/review.png",
+      alt: "Review",
+    },
+    {
+      image: "/home/review.png",
+      alt: "Review",
+    },
+    {
+      image: "/home/review.png",
+      alt: "Review",
+    },
+    {
+      image: "/home/review.png",
+      alt: "Review",
+    }, {
+      image: "/home/review.png",
+      alt: "Review",
+    },
+    {
+      image: "/home/review.png",
+      alt: "Review",
+    },
+  ];
+
   return (
     <div className="lg:mt-44 mt-24">
       <div className="lg:px-0 px-6">
@@ -40,71 +125,33 @@ const OurRating = () => {
           </div>
         ))}
       </div>
-      {/* <div className="Images mt-20 flex justify-between overflow-x-hidden items-baseline">
-        <img src="/home/left.png" alt=""  width={500} height={600} className="mx-auto lg:block hidden"/>
-        <div className="mx-auto ">
-          <img src="/home/main.png" alt=""  width={500} height={200} className=""/>
-          <img src="/home/computer_blur.png" alt="shadow"  width={500} height={200} className=""/>
-        </div>
-        <img src="/home/right.png" alt=""  width={500} height={600} className="mx-auto lg:block hidden"/>
-      </div> */}
-         
-          {/* <div className="w-full">
-      <Carousel
-        showStatus={false}
-        showThumbs={false}
-        autoPlay={true}
-        interval={2000} // Adjust the interval (in milliseconds) to control the speed of the carousel
-        infiniteLoop={true} 
-      >
-        <div>
-          <img src="/home/left.png" alt="Left Page" width={500} height={600}/>
-        </div>
-        <div className="mx-auto my-auto">
-            <img src="/home/main.png" alt="Monitor Screen" width={500} height={200}/>
-            <img
-              src="/home/computer_blur.png"
-              alt="Monitor Shadow"
-              className="absolute top-[80rem]"
-              width={500} 
-              height={200}/>
-        </div>
-        <div>
-          <img src="/home/right.png" alt="Right Page" width={500} height={600}/>
-        </div>
-      </Carousel>
-      </div> */}
-
-    <div className="flex justify-center items-center mt-40 mb-[40rem]">
-      <div className="monitor relative w-[500px] h-[200px]">
-        <img src="/home/main.png" alt="Monitor Screen" className="absolute top-0 left-0"/>
-        <img
-          src="/home/computer_blur.png"
-          alt="Monitor Shadow"
-          className="absolute top-[20rem] left-0"
-        />
-        <Carousel
-          showStatus={false}
-          showThumbs={false}
-          showArrows={false}
-          showIndicators={false}
-          autoPlay={true}
-          interval={2000}
-          infiniteLoop={true}
-        >
-          <div>
-            <img src="/home/left.png" alt="left1" width={500} height={600}/>
-          </div>
-          <div>
-            <img src="/home/left.png" alt="left2" width={500} height={600}/>
-          </div>
-          <div>
-            <img src="/home/left.png" alt="Screen 3" width={500} height={600}/>
-          </div>
-        </Carousel>
+      <div className=" mt-40 mx-auto mb-32 w-full">
+          <Carousel show={3} slide={3} swiping={true} 
+          transition={0.5}
+          infinite={true}
+          autoSwipe={true}
+          autoSwipeInterval={2000} 
+          >
+              <div className="w-[300px] lg:w-[500px]">
+              <img src="/home/left.png" alt="left1" />
+            </div>
+            <div className="w-[300px] lg:w-[500px]">
+              <img src="/home/monitor.png" alt="Screen 3" />
+            </div>
+            <div className="w-[300px] lg:w-[500px]">
+              <img src="/home/left.png" alt="Screen 3" />
+            </div>
+            <div className="w-[300px] lg:w-[500px] mx-2">
+              <img src="/home/left.png" alt="left1" />
+            </div>
+            <div className="w-[300px] lg:w-[500px]">
+              <img src="/home/monitor.png" alt="Screen 3" />
+            </div>
+            <div className="w-[300px] lg:w-[500px]">
+              <img src="/home/left.png" alt="Screen 3" />
+            </div>
+          </Carousel>
       </div>
-    </div>
-
     </div>
   );
 };

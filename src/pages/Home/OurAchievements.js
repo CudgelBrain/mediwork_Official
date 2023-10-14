@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 const OurAchievements = () => {
   const certs = [
@@ -36,13 +37,15 @@ const OurAchievements = () => {
         </h4>
       </div>
       <div className="flex mt-16">
+        <Marquee>
         {certs.map((data) => (
-          <ul className="lg:mx-14 mx-auto">
-            <li>
-              <img src={data.img} alt={data.alt} width={100} height={112} className="w-[100px]" />
-            </li>
-          </ul>
+          // <ul className="lg:mx-14 mx-auto">
+            
+              <img src={data.img} alt={data.alt} width={100} height={112} className="w-[100px] h-[100px] md:mx-14 mx-4" />
+            
+          // </ul>
         ))}
+        </Marquee>
       </div>
      
     </div>

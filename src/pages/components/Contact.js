@@ -43,7 +43,7 @@ const Contact = ({ showMap }) => {
   };
 
   return (
-    <div className={`max-w-7xl mx-auto ${route ==="/ContactUs/ContactUs"? "mt-0": "mt-16"}`}>
+    <div className={`max-w-7xl mx-auto ${route ==="/ContactUs/ContactUs"? "mt-0": "mt-8"}`}>
       <div className="border border-blue bg-blue lg:py-16 px-8 pb-16 sm:flex ">
         <div className="lg:w-[60%] w-full">
         {route.pathname === "/ContactUs/ContactUs" &&<h1 className="text-5xl lg:text-6xl font-semibold  mb-8 text-white">   
