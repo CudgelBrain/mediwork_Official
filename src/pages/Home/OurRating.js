@@ -1,4 +1,6 @@
 import React from "react";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 
 const OurRating = () => {
   const arr = [
@@ -38,14 +40,71 @@ const OurRating = () => {
           </div>
         ))}
       </div>
-      <div className="Images mt-20 flex justify-between overflow-x-hidden items-baseline">
+      {/* <div className="Images mt-20 flex justify-between overflow-x-hidden items-baseline">
         <img src="/home/left.png" alt=""  width={500} height={600} className="mx-auto lg:block hidden"/>
         <div className="mx-auto ">
           <img src="/home/main.png" alt=""  width={500} height={200} className=""/>
           <img src="/home/computer_blur.png" alt="shadow"  width={500} height={200} className=""/>
         </div>
         <img src="/home/right.png" alt=""  width={500} height={600} className="mx-auto lg:block hidden"/>
+      </div> */}
+         
+          {/* <div className="w-full">
+      <Carousel
+        showStatus={false}
+        showThumbs={false}
+        autoPlay={true}
+        interval={2000} // Adjust the interval (in milliseconds) to control the speed of the carousel
+        infiniteLoop={true} 
+      >
+        <div>
+          <img src="/home/left.png" alt="Left Page" width={500} height={600}/>
+        </div>
+        <div className="mx-auto my-auto">
+            <img src="/home/main.png" alt="Monitor Screen" width={500} height={200}/>
+            <img
+              src="/home/computer_blur.png"
+              alt="Monitor Shadow"
+              className="absolute top-[80rem]"
+              width={500} 
+              height={200}/>
+        </div>
+        <div>
+          <img src="/home/right.png" alt="Right Page" width={500} height={600}/>
+        </div>
+      </Carousel>
+      </div> */}
+
+    <div className="flex justify-center items-center mt-40 mb-[40rem]">
+      <div className="monitor relative w-[500px] h-[200px]">
+        <img src="/home/main.png" alt="Monitor Screen" className="absolute top-0 left-0"/>
+        <img
+          src="/home/computer_blur.png"
+          alt="Monitor Shadow"
+          className="absolute top-[20rem] left-0"
+        />
+        <Carousel
+          showStatus={false}
+          showThumbs={false}
+          showArrows={false}
+          showIndicators={false}
+          autoPlay={true}
+          interval={2000}
+          infiniteLoop={true}
+        >
+          <div>
+            <img src="/home/left.png" alt="left1" width={500} height={600}/>
+          </div>
+          <div>
+            <img src="/home/left.png" alt="left2" width={500} height={600}/>
+          </div>
+          <div>
+            <img src="/home/left.png" alt="Screen 3" width={500} height={600}/>
+          </div>
+        </Carousel>
       </div>
+    </div>
+
     </div>
   );
 };

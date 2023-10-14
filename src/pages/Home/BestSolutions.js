@@ -63,7 +63,7 @@ const Section2 = () => {
           Explore Our Offering
         </h4>
       </div>
-      <div className="mt-16 relative lg:px-0 px-8">
+      <div className="mt-20 relative lg:left-14 px-8">
         <div className="lg:absolute z-10 bottom-[2rem] -left-20 w-full lg:block hidden">
           <ul className="border-yellow w-[30%] bg-yellow shadow-xl py-4">
             {arr.map((data) => (
