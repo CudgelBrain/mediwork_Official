@@ -1,0 +1,33 @@
+.table-container {
+    overflow-x: auto; /* Changed from scroll to auto to hide scrollbar when not needed */
+    position: relative;
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th.fixed, td.fixed {
+    position: sticky;
+    left: 0;
+    /* border-right: 1px solid black !important; */
+    /* background-color: white; */
+    z-index: 1;
+}
+
+/* For screens wider than 768px */
+@media (min-width: 480px) {
+    table {
+        width: 150%; /* The width is increased to make other columns scrollable */
+    }
+}
+
+/* You can add more media queries for other breakpoints if needed, for example:
+
+@media (min-width: 1024px) {
+    ... styles for larger screens ...
+}
+*/

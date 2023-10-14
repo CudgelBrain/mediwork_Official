@@ -90,14 +90,8 @@ const Section2 = () => {
           </div>
           <div className="flex lg:flex-row flex-col">
             <p className="mt-5">
-              This module is in facr an entry point for scheduled appointments
-              with the doctor for any kind of diagnosis or consultations
-              required. This module allows doctors to provide better patient
-              care and quick diagnosis and treatment decisions by giving easy
-              access to patient information .patient visites are classfified as
-              new or revisit. New requests and requests laboratory tests,
-              x-rays, and other examinations this module can also be used to
-              manage.
+              This module actually serves as a starting point for scheduling a doctor appointment for any necessary diagnoses or consultations. By giving doctors quick access to patient information, this module enables doctors to provide better patient care and make timely diagnoses and treatment decisions.
+              THERE ARE TWO KINDS OF PATIENT VISITS: NEW AND REVISIT. This module can also be used to manage new requests and the outcomes of laboratory tests, X-rays, and other examinations.
             </p>
             <img
               src="/home/doc.png"
