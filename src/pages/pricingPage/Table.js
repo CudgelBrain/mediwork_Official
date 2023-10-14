@@ -71,7 +71,7 @@ const DynamicTable = () => {
   // };
 
   return (
-    <div className="max-w-7xl mx-auto  pl-6 lg:pl-0 bg-white" style={{
+    <div className="max-w-7xl mx-auto pl-6 lg:pl-0 bg-white" style={{
       background: 'transparent'
     }}  >
       <div class="table-outer-wrapper">

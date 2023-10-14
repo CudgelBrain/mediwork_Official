@@ -20,7 +20,7 @@ const AchievementsDemo = () => {
             className="relative -top-36 lg:-top-44 lg:left-[17.5rem] left-[50%] z-40 text-white"
             size="2x"
           />
-          <div className="border bg-yellow bg-opacity-25 lg:p-10  h-[250px] lg:h-[343px] w-full lg:w-[574px] rounded-[1.2rem] absolute z-60 lg:top-[210.60rem] top-0 lg:block" />
+          <div className="border bg-yellow bg-opacity-25 lg:p-10 h-[250px] lg:h-[343px] w-full lg:w-[574px] rounded-[1.7rem] absolute z-60 lg:top-[0rem] top-0 lg:block" />
         </div>
         <div className="lg:w-1/2">
           <h1 className="text-yellow">Welcome To Healthcare</h1>

@@ -12,7 +12,7 @@ const section1 = () => {
   
   return (
     <div>
-      <div className="mt-20">
+      <div className="mt-20 p-6">
         <MainHeadline
           head={head}
           spanHead={spanHead}
