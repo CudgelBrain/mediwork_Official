@@ -18,21 +18,21 @@ const HelpdeskReception = () => {
           <div className="flex px-4 md:px-0">
             <div>
               <ul className="list-disc md:ml-5 mt-5 md:leading-10 leading-8 text-sm md:text-lg decoration-1">
-                <li>Visit Detail</li>
-                <li>Diagnosis Detail</li>
-                <li>Patient Appointments</li>
-                <li>Clinical Service Detail</li>
-                <li>Test and Investigation Reporting</li>
+                <li style={{textTransform:"uppercase"}} >Visit Detail</li>
+                <li style={{textTransform:"uppercase"}} >Diagnosis Detail</li>
+                <li style={{textTransform:"uppercase"}} >Patient Appointments</li>
+                <li style={{textTransform:"uppercase"}} >Clinical Service Detail</li>
+                <li style={{textTransform:"uppercase"}} >Test and Investigation Reporting</li>
               </ul>
             </div>
             <div>
               <ul className="list-disc ml-5 mt-5 md:leading-10 leading-8 text-sm md:text-lg decoration-1">
-                <li>Outpatient Medical Observation</li>
-                <li>Appointment Scheduling</li>
-                <li>Diagnosis and Treatment History</li>
-                <li>Medicines Detail</li>
-                <li>Medicines Advised and Can Be Supplied to Patients by Pharmacy.</li>
-                <li>Vaccine Charts</li>
+                <li style={{textTransform:"uppercase"}} >Outpatient Medical Observation</li>
+                <li style={{textTransform:"uppercase"}} >Appointment Scheduling</li>
+                <li style={{textTransform:"uppercase"}} >Diagnosis and Treatment History</li>
+                <li style={{textTransform:"uppercase"}} >Medicines Detail</li>
+                <li style={{textTransform:"uppercase"}} >Medicines Advised and Can Be Supplied to Patients by Pharmacy.</li>
+                <li style={{textTransform:"uppercase"}} >Vaccine Charts</li>
               </ul>
             </div>
           </div>

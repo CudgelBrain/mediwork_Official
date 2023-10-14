@@ -125,29 +125,29 @@ const OurRating = () => {
           </div>
         ))}
       </div>
-      <div className=" mt-40 mx-auto mb-32 w-full">
+      <div className=" mt-40 mx-auto md:ml-20 mb-32 w-full">
           <Carousel show={3} slide={3} swiping={true} 
           transition={0.5}
           infinite={true}
           autoSwipe={true}
           autoSwipeInterval={2000} 
           >
-              <div className="w-[300px] lg:w-[500px]">
+              <div className="w-full lg:w-[500px]">
               <img src="/home/left.png" alt="left1" />
             </div>
-            <div className="w-[300px] lg:w-[500px]">
+            <div className="w-full lg:w-[500px]">
               <img src="/home/monitor.png" alt="Screen 3" />
             </div>
-            <div className="w-[300px] lg:w-[500px]">
+            <div className="w-full lg:w-[500px]">
               <img src="/home/left.png" alt="Screen 3" />
             </div>
-            <div className="w-[300px] lg:w-[500px] mx-2">
+            <div className="w-full lg:w-[500px] mx-2">
               <img src="/home/left.png" alt="left1" />
             </div>
-            <div className="w-[300px] lg:w-[500px]">
+            <div className="w-full lg:w-[500px]">
               <img src="/home/monitor.png" alt="Screen 3" />
             </div>
-            <div className="w-[300px] lg:w-[500px]">
+            <div className="w-full lg:w-[500px]">
               <img src="/home/left.png" alt="Screen 3" />
             </div>
           </Carousel>
