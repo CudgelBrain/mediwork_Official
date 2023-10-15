@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-white py-16 px-12 md:px-20 lg:py-10 md:flex border-t-4 border-yellow">
+    <div className="bg-white py-8 px-12 md:px-20 lg:py-10 md:flex border-t-4 border-yellow">
       <div className="w-full md:w-[42%] md:ml-20">
         <img src="/blueLogo.png" alt="Logo" className="md:w-[143px] md:h-[51px]" />
         <p className="mt-4 text-sm md:text-lg md:mt-0">
