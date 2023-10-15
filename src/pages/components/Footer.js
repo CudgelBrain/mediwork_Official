@@ -8,20 +8,20 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-white py-8 px-12 md:px-20 lg:py-10 md:flex border-t-4 border-yellow">
+    <div className="bg-white py-5 px-12 md:px-20 lg:py-10 md:flex border-t-4 border-yellow">
       <div className="w-full md:w-[42%] md:ml-20">
-        <img src="/blueLogo.png" alt="Logo" className="md:w-[143px] md:h-[51px]" />
-        <p className="mt-4 text-sm md:text-lg md:mt-0">
+        <img src="/blueLogo.png" alt="Logo" className="w-[150px] h-[70px] md:w-[143px] md:h-[51px]" />
+        <p className="lg:mt-4 text-sm md:text-lg md:mt-0">
           This free App provides a solution to your health needs by offering you
           a one-stop access to complete information about various medical
           checkups. This App carries simple tips and advice to help you maintain
           a healthy lifestyle.
         </p>
       </div>
-      <div className="flex justify-between mt-10 md:mt-0">
-        <div className="md:px-10 text-l_black md:ml-40">
-          <h2 className="text-xl  font-semibold">Company</h2>
-          <ul className="leading-relaxed text-sm md:text-lg mt-2">
+      <div className="flex justify-between mt-5 lg:mt-10 md:mt-0">
+        <div className=" md:px-10 text-l_black md:ml-40">
+          <h2 className="text-md lg:text-xl font-semibold">Company</h2>
+          <ul className="leading-snug lg:leading-relaxed text-sm md:text-lg mt-2">
             <li className="md:mt-0 mt-3">Home</li>
             <li className="md:mt-0 mt-1">About</li>
             <li className="md:mt-0 mt-1">Services</li>
@@ -29,15 +29,15 @@ const Footer = () => {
           </ul>
         </div>
         <div className="md:pl-3 text-l_black">
-          <h2 className="text-xl  font-semibold">Explore</h2>
-          <ul className="leading-relaxed mt-2 text-sm md:text-lg">
+          <h2 className="text-md lg:text-xl font-semibold">Explore</h2>
+          <ul className="leading-snug lg:leading-relaxed mt-2 text-sm md:text-lg">
             <li className="md:mt-0 mt-3">Terms & Conds</li>
             <li className="md:mt-0 mt-1">Privacy Policy</li>
             <li className="md:mt-0 mt-1">Cookies</li>
           </ul>
         </div>
         <div className="md:px-10 text-l_black">
-          <h2 className="text-center text-xl  font-semibold">Social Media</h2>
+          <h2 className="text-center text-md lg:text-xl font-semibold">Social Media</h2>
           <div className="flex mt-2">
             <div className="bg-white px-3 flex text-blue text-[30px] sm:text-[22px]">
               <FontAwesomeIcon icon={faFacebook} />

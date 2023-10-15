@@ -13,7 +13,7 @@ const Pricing = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-20 lg:px-0 px-6">
+      <div className="mt-10 lg:mt-20 lg:px-0 px-6">
         <MainHeadline
           head={head}
           spanHead={spanHead}

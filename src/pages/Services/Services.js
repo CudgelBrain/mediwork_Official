@@ -2,9 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Headlines from "../components/Headlines";
 import Contact from "../components/Contact";
-import SpecialFooter from "./SpecialFooter";
 import HelpdeskReception from "./HelpdeskReception";
 import HelpdeskReception2 from "./HelpdeskReception2";
+import Footer from "../components/Footer";
 
 const Services = () => {
   const startHead = "Hospital Healthcare Platform";
@@ -30,7 +30,7 @@ const Services = () => {
       <HelpdeskReception />
       <HelpdeskReception2/>
       <Contact />
-      <SpecialFooter />
+      <Footer />
     </div>
   );
 };
