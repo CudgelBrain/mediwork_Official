@@ -1,109 +1,93 @@
-import React from "react";
+import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
 import { Carousel } from '@trendyol-js/react-carousel';
 
-// import { useSnapCarousel } from "react-snap-carousel";
+
+const defaultPosition = [
+  "left-0 z-10",
+  "top-16 left-16 z-20",
+  "top-20 left-1/2 transform -translate-x-1/2 ",
+  `top-16 right-16 z-20`,
+  "right-0 z-10"
+]
+
+const arr = [
+  {
+    numbers: "900+",
+    title: "Verified Specialist",
+    desc: "Highly Verified",
+  },
+  {
+    numbers: "45000+",
+    title: "Happy Customers",
+    desc: "Highly Performance",
+  },
+  {
+    numbers: "99.7%",
+    title: "Positive Feedback",
+    desc: "Customers Approve",
+  },
+];
+
+const arr2 = [
+  {
+    image: "/home/doc.png",
+    alt: "Review",
+  },
+  {
+    image: "/home/review.png",
+    alt: "Review",
+  },
+  {
+    image: "/home/monitor_bg.jpg",
+    alt: "Review",
+  },
+  {
+    image: "/services/doctors.png",
+    alt: "Review",
+  }, {
+    image: "/home/video.png",
+    alt: "Review",
+  },
+
+];
+
 
 const OurRating = () => {
 
+  const [imagePosition, setImagePosition] = useState(arr2)
+  const [animations, setAnimations] = useState([])
 
-  const styles = {
-    root: {},
-    scroll: {
-      position: "relative",
-      display: "flex",
-      overflow: "auto",
-      scrollSnapType: "x mandatory"
-    },
-    item: {
-      width: "500px",
-      height: "500px",
-      flexShrink: 0
-    },
-    itemSnapPoint: {
-      scrollSnapAlign: "start"
-    },
-    controls: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      marginTop: "1.5rem"
-    },
-    nextPrevButton: {
-      backgroundColor: 'white',
-      color: 'orange',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      boxShadow: 'black 0px 0px 20px',
-      borderRadius: '1.5rem',
-      alignSelf: 'center',
-      fontWieght: "bold",
-      fontSize: '1.2rem',
-      width: "2.5rem",
-      height: "2.5rem",
-      margin: "0px 12px"
-    },
-    nextPrevButtonDisabled: { opacity: 0.3 },
-    pagination: {
-      display: "flex"
-    },
-    paginationButton: {
-      margin: "10px"
-    },
-    paginationButtonActive: { opacity: 0.3 },
-    pageIndicator: {
-      display: "flex",
-      justifyContent: "center"
+  function handleRotationImage(index) {
+    let direction;
+    if (index == 1) direction = "ltr"
+    else if (index === 3) direction = "rtl"
+
+    if(direction == 'ltr') {
+      let imagePositionCopy = [...imagePosition];
+      const el = imagePositionCopy.pop()
+      imagePositionCopy.unshift(el)      
+      setImagePosition([...imagePositionCopy])
+      setAnimations([
+     
+      ])
     }
-  };
+    if(direction == 'rtl') {
+      let imagePositionCopy = [...imagePosition];
+      const el = imagePositionCopy.shift()
+      imagePositionCopy.push(el)      
+      setImagePosition([...imagePositionCopy])
+      setAnimations([
+        
+        ])
+    }
 
-  const arr = [
-    {
-      numbers: "900+",
-      title: "Verified Specialist",
-      desc: "Highly Verified",
-    },
-    {
-      numbers: "45000+",
-      title: "Happy Customers",
-      desc: "Highly Performance",
-    },
-    {
-      numbers: "99.7%",
-      title: "Positive Feedback",
-      desc: "Customers Approve",
-    },
-  ];
+  }
+
+  console.log(animations[4])
 
 
 
-
-  const arr2 = [
-    {
-      image: "/home/review.png",
-      alt: "Review",
-    },
-    {
-      image: "/home/review.png",
-      alt: "Review",
-    },
-    {
-      image: "/home/review.png",
-      alt: "Review",
-    },
-    {
-      image: "/home/review.png",
-      alt: "Review",
-    }, {
-      image: "/home/review.png",
-      alt: "Review",
-    },
-    {
-      image: "/home/review.png",
-      alt: "Review",
-    },
-  ];
 
   return (
     <div className="lg:mt-44 mt-24">
@@ -125,33 +109,23 @@ const OurRating = () => {
           </div>
         ))}
       </div>
-      <div className=" mt-40 mx-auto md:ml-20 mb-32 w-full">
-          <Carousel show={3} slide={3} swiping={true} 
-          transition={0.5}
-          infinite={true}
-          autoSwipe={true}
-          autoSwipeInterval={2000} 
-          >
-              <div className="w-full lg:w-[500px]">
-              <img src="/home/left.png" alt="left1" />
-            </div>
-            <div className="w-full lg:w-[500px]">
-              <img src="/home/monitor.png" alt="Screen 3" />
-            </div>
-            <div className="w-full lg:w-[500px]">
-              <img src="/home/left.png" alt="Screen 3" />
-            </div>
-            <div className="w-full lg:w-[500px] mx-2">
-              <img src="/home/left.png" alt="left1" />
-            </div>
-            <div className="w-full lg:w-[500px]">
-              <img src="/home/monitor.png" alt="Screen 3" />
-            </div>
-            <div className="w-full lg:w-[500px]">
-              <img src="/home/left.png" alt="Screen 3" />
-            </div>
-          </Carousel>
+      <div className="w-full  h-screen relative">
+
+        <img src={"/home/mac.png"} alt="Screen 3"
+          className={`absolute w-[32%] top-10  z-50 left-1/2 transform -translate-x-1/2
+              `} />
+        {
+          imagePosition.map((el, index) => {
+            return <span key={index} onClick={() => handleRotationImage(index)} className={animations[index] || ""} >
+              <img src={el.image} alt="Screen 3"
+                className={`absolute ${index == 2 ? "w-[25%]" : "w-[20%]"} ${defaultPosition[index]}
+              `} />
+            </span>
+          }
+          )}
+
       </div>
+
     </div>
   );
 };

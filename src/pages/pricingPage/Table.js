@@ -81,7 +81,7 @@ const DynamicTable = () => {
                 background: 'transparent'
               }}  >
                 <tr>
-                  <th scope="col" className="fixed text-white text-3xl bg-yellow  px-6 py-4 sortable" style={{
+                  <th scope="col" className="text-white text-3xl bg-yellow  px-6 py-4" style={{
                     borderTopLeftRadius: "40px",
 
                   }}>
@@ -102,7 +102,7 @@ const DynamicTable = () => {
               <tbody className="">
 
                 <tr class=" bg-gray-50 dark:bg-white dark:border-gray-700 text-black">
-                  <th scope="row" class="px-6 py-4 font-medium fixed bg-gray-50 
+                  <th scope="row" class="px-6 py-4 font-medium  bg-gray-50 
                   ">
                     Helpdesk / Reception Management
                   </th>
@@ -117,7 +117,7 @@ const DynamicTable = () => {
                   </td>
                 </tr>
                 <tr class=" bg-gray-50 dark:bg-gray-300 dark:border-gray-700 text-black">
-                  <th scope="row" class="px-6 py-4 font-medium fixed  dark:bg-gray-300 ">
+                  <th scope="row" class="px-6 py-4 font-medium  dark:bg-gray-300 ">
                     Helpdesk / Reception Management
                   </th>
                   <td class="px-6 py-4 text-center border-x-2 border-x-black">
@@ -133,7 +133,7 @@ const DynamicTable = () => {
                   </td>
                 </tr>
                 <tr class=" bg-gray-50 dark:bg-white dark:border-gray-700 text-black">
-                  <th scope="row" class="px-6 py-4 font-medium border-x-2 border-x-black fixed bg-gray-50">
+                  <th scope="row" class="px-6 py-4 font-medium border-x-2 border-x-black  bg-gray-50">
                     Helpdesk / Reception Management
                   </th>
                   <td class="px-6 py-4 text-center border-x-2 border-x-black">
@@ -147,7 +147,7 @@ const DynamicTable = () => {
                   </td>
                 </tr>
                 <tr class=" bg-gray-50 dark:bg-gray-300 dark:border-gray-700 text-black">
-                  <th scope="row" class="px-6 py-4 font-medium border-x-2 border-x-black fixed dark:bg-gray-300">
+                  <th scope="row" class="px-6 py-4 font-medium border-x-2 border-x-black  dark:bg-gray-300">
                     Helpdesk / Reception Management
                   </th>
                   <td class="px-6 py-4 text-center border-x-2 border-x-black">
@@ -161,7 +161,7 @@ const DynamicTable = () => {
                   </td>
                 </tr>
                 <tr class=" bg-gray-50 dark:bg-white dark:border-gray-700 text-black">
-                  <th scope="row" class="px-6 py-4 font-medium fixed bg-gray-50">
+                  <th scope="row" class="px-6 py-4 font-medium  bg-gray-50">
                     Helpdesk / Reception Management
                   </th>
                   <td class="px-6 py-4 text-center border-x-2 border-x-black">
@@ -175,7 +175,7 @@ const DynamicTable = () => {
                   </td>
                 </tr>
                 <tr class=" bg-gray-50 dark:bg-gray-300 dark:border-gray-700 text-black">
-                  <th scope="row" class="px-6 py-4 font-medium border-x-2 border-x-black fixed dark:bg-gray-300">
+                  <th scope="row" class="px-6 py-4 font-medium border-x-2 border-x-black  dark:bg-gray-300">
                     Helpdesk / Reception Management
                   </th>
                   <td class="px-6 py-4 text-center border-x-2 border-x-black">
@@ -189,7 +189,7 @@ const DynamicTable = () => {
                   </td>
                 </tr>
                 <tr class=" bg-gray-50 dark:bg-white dark:border-gray-700 text-black">
-                  <th scope="row" class="px-6 py-4 font-medium fixed bg-gray-50">
+                  <th scope="row" class="px-6 py-4 font-medium  bg-gray-50">
                     Helpdesk / Reception Management
                   </th>
                   <td class="px-6 py-4 text-center border-x-2 border-x-black">
@@ -203,7 +203,7 @@ const DynamicTable = () => {
                   </td>
                 </tr>
                 <tr class=" bg-gray-50 dark:bg-gray-300 dark:border-gray-700 text-black">
-                  <th scope="row" class="px-6 py-4 font-medium fixed dark:bg-gray-300">
+                  <th scope="row" class="px-6 py-4 font-medium  dark:bg-gray-300">
                     Helpdesk / Reception Management
                   </th>
                   <td class="px-6 py-4 text-center border-x-2 border-x-black">
@@ -217,7 +217,7 @@ const DynamicTable = () => {
                   </td>
                 </tr>
                 <tr class=" bg-gray-50 dark:bg-white dark:border-gray-700 text-black">
-                  <th scope="row" class="px-6 py-4 font-medium fixed bg-gray-50">
+                  <th scope="row" class="px-6 py-4 font-medium  bg-gray-50">
                     Helpdesk / Reception Management
                   </th>
                   <td class="px-6 py-4 text-center border-x-2 border-x-black">
@@ -231,7 +231,7 @@ const DynamicTable = () => {
                   </td>
                 </tr>
                 <tr class=" bg-gray-50 dark:bg-gray-300 dark:border-gray-700 text-black">
-                  <th scope="row" class="px-6 py-4 font-medium fixed dark:bg-gray-300">
+                  <th scope="row" class="px-6 py-4 font-medium  dark:bg-gray-300">
                     Helpdesk / Reception Management
                   </th>
                   <td class="px-6 py-4 text-center border-x-2 border-x-black">
@@ -244,8 +244,11 @@ const DynamicTable = () => {
                     <FontAwesomeIcon icon={faCircleXmark} className="mr-2 text-xl text-orange-400" />
                   </td>
                 </tr>
-                <tr>
-                  <th scope="col" className=" text-white text-3xl bg-yellow  text-center  p-3 fixed" style={{
+             
+              </tbody>
+              <tfoot>
+              <tr>
+                  <th scope="col" className=" text-white text-3xl bg-yellow  text-center  p-3 " style={{
                     borderBottomLeftRadius: "40px",
 
                   }}>
@@ -261,7 +264,7 @@ const DynamicTable = () => {
                   </th>
 
                 </tr>
-              </tbody>
+              </tfoot>
             </table>
           </div>
           </div>

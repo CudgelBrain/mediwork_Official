@@ -134,15 +134,5 @@ const OurCustomersSay = () => {
   );
 };
 
-const CarouselItem = ({ isSnapPoint, children }) => (
-  <li
-    style={{
-      ...styles.item,
-      ...(isSnapPoint ? styles.itemSnapPoint : {})
-    }}
-  >
-    {children}
-  </li>
-);
 
 export default OurCustomersSay;
