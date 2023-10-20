@@ -68,11 +68,9 @@ const OurRating = () => {
       imagePositionCopy.unshift(el)
       setImagePosition([...imagePositionCopy])
       setAnimations([
-        {x:100},
-        {x:100},
-        {x:100, y:-10},
-        {x:100},
-        {x:400},  
+        "slide--active",
+        "slide-left",
+        "slide-left-3",
       ])
     }
     if (direction == 'rtl') {
@@ -127,17 +125,13 @@ const OurRating = () => {
               `} />
         {
           imagePosition.map((el, index) => {
-            return <motion.div key={index} onClick={() => handleRotationImage(index)} className={ `${(index == 0 || index==4)  ? "md:block hidden" : ""} ${animations[index]}`} 
-            transition={{
-              type:'spring'
-            }}
-            whileTap={
-              animations[index]
-            }
-         
+            return <motion.div key={index} onClick={() => handleRotationImage(index)} className={ `${(index == 0 || index==4)  ? "cursor-pointer hidden" : ""} ${animations[index]}`} 
+            // initial="initial"
+            // animate={animations[index] ? animations[index] : 'initial'}                  
             >
               <img src={el.image} alt="Screen 3"
                 className={`absolute ${index == 2 ? "md:w-[25%] w-[230px]" : "md:w-[20%]  w-[230px]"} ${defaultPosition[index]}
+                
               `} />
             </motion.div>
           }
