@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 const Services = () => {
   const startHead = "Hospital Healthcare Platform";
-  const headImg = "/services/doctors.png";
+  const headImg = "/svg/one/doctors-not-css.svg";
   const content =
     "Health carely is a new way to get health insurance quotes. We offer tools similar to thoseprovided by insurance companies for free and prices are based on donations and not restrictive health plan networks.";
   const height = "0";

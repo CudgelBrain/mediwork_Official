@@ -94,7 +94,7 @@ const Section2 = () => {
               THERE ARE TWO KINDS OF PATIENT VISITS: NEW AND REVISIT. This module can also be used to manage new requests and the outcomes of laboratory tests, X-rays, and other examinations.
             </p>
             <img
-              src="/home/doc.png"
+              src="/Doctor.gif"
               alt="Doctor Image"
               height={262}
               width={262}

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('/public/svg/three/doctor-styles.css');
+@import url('/public/svg/two/doctors-styles.css');
+@import url('/public/svg/one/doctors-styles.css');
+
 :root {
   --custom-blue:#0D2137
 }

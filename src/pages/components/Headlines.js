@@ -7,7 +7,7 @@ const Headlines = ({startHead,spanHead,endHead,content,showButton,headImg,width,
   const buttonPlaceholder = "Contact Us";
   const buttonPlaceholderVoucher = "Download Voucher";
   return (
-    <div className="lg:mt-16">
+    <div className="lg:mt-16 md:mb-8">
        <div className="block md:hidden mt-0">
           {/*IMAGE GROUP*/}
           <Image
