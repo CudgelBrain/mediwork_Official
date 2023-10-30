@@ -13,7 +13,7 @@ const defaultPosition = [
 
 const arr = [
   {
-    numbers: "900+",
+    numbers: "900+",  
     title: "Verified Specialist",
     desc: "Highly Verified",
   },
@@ -31,22 +31,22 @@ const arr = [
 
 const arr2 = [
   {
-    image: "/home/doc.png",
+    image:"/home/monitor_bg.jpg",
     alt: "Review",
   },
   {
-    image: "/home/review.png",
+    image:"/home/monitor_bg.jpg",
     alt: "Review",
   },
   {
-    image: "/home/monitor_bg.jpg",
+    image:"/home/monitor_bg.jpg",
     alt: "Review",
   },
   {
-    image: "/services/doctors.png",
+    image:"/home/monitor_bg.jpg",
     alt: "Review",
   }, {
-    image: "/home/video.png",
+    image:"/home/monitor_bg.jpg",
     alt: "Review",
   },
 
@@ -109,7 +109,7 @@ const OurRating = () => {
           </div>
         ))}
       </div>
-      <div className="w-full  h-screen relative">
+      <div className="w-full h-screen relative mt-28">
 
         <img src={"/home/mac.png"} alt="Screen 3"
           className={`absolute w-[32%] top-10  z-50 left-1/2 transform -translate-x-1/2

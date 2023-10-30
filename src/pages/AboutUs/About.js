@@ -32,7 +32,7 @@ const About = () => {
   const spanHead = "MediWorks"
   const endHead = "? We’re so glad you asked." 
   const content = "Health carely is a new way to get health insurance quotes. We offer tools similar to those provided by insurance companies for free and prices are based on donations and not restrictive health plan networks."
-  const headImg = "/about/group.png"
+  const headImg = "/about/doctorsGif.gif"
   const height = '500'; // Set your desired height
   const width = '500'; // Set your desired width
 
