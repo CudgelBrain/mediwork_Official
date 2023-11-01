@@ -6,7 +6,7 @@ import MarginBt from "./MarginBt";
 import OurRating from "./OurRating";
 import OurAchievements from "./OurAchievements";
 import FastSolutions from "./FastSolutions";
-import Contact from "../components/Contact";
+import Contact from "../Contact";
 import OurCustomersSay from "./OurCustomersSay";
 import Footer from "../components/Footer";
 

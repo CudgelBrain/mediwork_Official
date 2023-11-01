@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import MainHeadline from "../components/MainHeadline";
-import Footer from "../components/Footer";
-import DynamicTable from "./Table";
+import Navbar from "./components/Navbar";
+import MainHeadline from "./components/MainHeadline";
+import Footer from "./components/Footer";
+import DynamicTable from "./pricingPage/Table";
 const Pricing = () => {
   const head = "Find the Platform that is";
   const spanHead = "Right for You";

@@ -6,10 +6,10 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "About Us", href: "/AboutUs/About", current: true },
-  { name: "Services", href: "/Services/Services", current: false },
-  { name: "Pricing", href: "/pricingPage/Pricing", current: false },
-  { name: "Contact", href: "/ContactUs/ContactUs", current: false },
+  { name: "About Us", href: "/About", current: true },
+  { name: "Services", href: "/Services", current: false },
+  { name: "Pricing", href: "/Pricing", current: false },
+  { name: "Contact", href: "/ContactUs", current: false },
   // { name: "Contact", href: "/contact/contact", current: false },
 ];
 
@@ -25,7 +25,7 @@ export default function Navbar() {
   };
 
   return (
-    <Disclosure as="nav" className="">
+    <Disclosure as="nav" className="lg:bg-white h-24">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-4 md:pt-2">

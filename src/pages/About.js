@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Headlines from '../components/Headlines'
-import FastSolutions from '../Home/FastSolutions'
-import DeviceSection from './DeviceSection'
-import Icons from '../components/Icons'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
+import Navbar from './components/Navbar'
+import Headlines from './components/Headlines'
+import FastSolutions from './Home/FastSolutions'
+import DeviceSection from './AboutUs/DeviceSection'
+import Icons from './components/Icons'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 const About = () => {
   const arr = [
