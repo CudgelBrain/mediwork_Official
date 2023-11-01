@@ -1,0 +1,108 @@
+.table-container {
+/* Adjust as needed */
+    overflow: auto;
+    border: 1px solid black;
+}
+
+/* table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+  /* Sticky header */
+/* thead th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+Sticky first column
+tbody th {
+    background-color: #f2f2f2;
+    position: sticky;
+    left: 0;
+    z-index: 1; */
+/* } * */
+
+/* For screens wider than 768px */
+@media (max-width: 768px) {
+    .table-container{
+         margin: 0px auto;
+        width: 600px; /* Adjust as needed */
+        height: 500px !important; 
+    }
+    table {
+        width: 150%; /* The width is increased to make other columns scrollable */
+    }
+}
+
+/* You can add more media queries for other breakpoints if needed, for example:
+
+@media (min-width: 1024px) {
+    ... styles for larger screens ...
+}
+*/
+
+@media (max-width: 500px) {
+    .table-container{
+        margin: 0px auto;
+        width: 400px; /* Adjust as needed */
+        height: 500px !important; 
+    }
+    table {
+        width: 150%; /* The width is increased to make other columns scrollable */
+    }
+}
+
+table {
+    white-space: nowrap;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  table td,
+  table th {
+    border: 1px solid black;
+  }
+  table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+  }
+  
+  
+  table tbody th {
+    position: relative;
+  }
+  table thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+  table tbody th {
+    position: sticky;
+    left: 0;
+    background: white;
+    z-index: 1;
+  }
+  table tbody th:last-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+
+  table tfoot th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+  }
+  
+  table tfoot th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+
+  
