@@ -1,8 +1,13 @@
 import { useRouter } from "next/router";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3CenterLeftIcon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3CenterLeftIcon,
+  BellIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
+import servicesDropdown from "../../constants/servicesDropdown.json";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -43,17 +48,16 @@ export default function Navbar() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center lg:hidden order-2">
                 {/* Mobile menu button*/}
-                <Disclosure.Button
-                  className="relative inline-flex items-center justify-end p-2 mr-3 text-white border border-yellow rounded-full bg-yellow hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                >
+                <Disclosure.Button className="relative inline-flex items-center justify-end p-2 mr-3 text-white border border-yellow rounded-full bg-yellow hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
                     <Bars3CenterLeftIcon
-                    className="block h-6 w-6" aria-hidden="true" />
-                    
+                      className="block h-6 w-6"
+                      aria-hidden="true"
+                    />
                   )}
                 </Disclosure.Button>
               </div>
@@ -122,6 +126,30 @@ export default function Navbar() {
                             >
                               {item.name}
                             </Link>
+                            {item.name === "Services" ? (
+                              <div>
+                                {
+                                  <div className="">
+                                    <div className="grid grid-cols-3 absolute my-2 bg-white border border-gray-200 rounded-lg w-[50%]">
+                                      {servicesDropdown.map(
+                                        (service, index) => (
+                                          <a
+                                            key={index}
+                                            href="#"
+                                            className="px-4 py-2 text-gray-700 hover:bg-yellow hover:text-white hover:rounded-lg"
+                                          >
+                                            {service.name}
+                                          </a>
+                                        )
+                                      )}
+                                    </div>
+                                  </div>
+                                }
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                            {/* --------------------------------------- */}
                           </li>
                         ))}
                     </ul>
