@@ -43,7 +43,7 @@ const arr2 = [
 
 const arr = [
   {
-    numbers: "900+",
+    numbers: "900+",  
     title: "Verified Specialist",
     desc: "Highly Verified",
   },

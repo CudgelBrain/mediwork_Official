@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Section1 from "./Section1";
 import BestSolutions from "./BestSolutions";
-import MarginBt from "./MarginBt";
 import OurRating from "./OurRating";
 import OurAchievements from "./OurAchievements";
 import FastSolutions from "./FastSolutions";
