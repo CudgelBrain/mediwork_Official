@@ -20,7 +20,7 @@ const Headlines = ({startHead,spanHead,endHead,content,showButton,headImg,width,
         </div>
       <div className="sm:flex mx-10 pb-16 md:pb-0">
         {/*WRAPPER*/}
-        <div className="md:w-[500px]">
+        <div className="md:w-[650px]">
           {/*HEADINGS*/}
           <h1 className="text-white text-6xl font-semibold mt-10 leading-tight">
             {startHead} <span className="text-yellow">{spanHead}</span>{endHead}</h1>
@@ -37,7 +37,7 @@ const Headlines = ({startHead,spanHead,endHead,content,showButton,headImg,width,
             )}
           </div>
         </div>
-        <div className="md:block hidden mt-0">
+        <div className="md:block  hidden mt-0">
           {/*IMAGE GROUP*/}
           <Image
             src={headImg}

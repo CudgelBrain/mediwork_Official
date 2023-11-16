@@ -1,20 +1,73 @@
 [
     {
-        "name":"service1"
+        "name": "OUTPATIENT MANAGEMENT"
     },
     {
-        "name":"service1"
+        "name": "Inpatient Management"
     },
     {
-        "name":"service1"
+        "name": "WARD MANAGEMENT"
     },
     {
-        "name":"service1"
+        "name": "LABORATORY MANAGEMENT SYSTEM"
     },
     {
-        "name":"service1"
+        "name": "OPERATION THEATRE MANAGEMENT"
     },
     {
-        "name":"service1"
+        "name": "BLOOD BANK"
+    },
+    {
+        "name": "Emergency / Casualty Management"
+    },
+    {
+        "name": "Insurance Management"
+    },
+    {
+        "name": "Appointment Scheduling"
+    },
+    {
+        "name": "Doctor Module"
+    },
+    {
+        "name": "Electronic Medical Record (EMR)"
+    },
+    {
+        "name": "Nursing Module"
+    } ,
+    {
+        "name": "Pharmacy Management System"
+    },
+    {
+        "name": "Staff and HR & Payroll Management"
+    },
+    {
+        "name": "Inventory Management & Purchase"
+    },
+    {
+        "name": "Laundry Management"
+    },
+    {
+        "name": "Ambulance Management"
+    },
+    {
+        "name": "Canteen Management"
+    },
+    {
+        "name": "Dietary Management"
+    },
+    {
+        "name": "Financial Accounting"
+    },
+    {
+        "name": "MIS Reports"
+    },
+    {
+        "name": "Admin Security"
+    },
+    {
+        "name": "Internal Communication System"
     }
 ]
+
+
